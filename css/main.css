@@ -1,0 +1,51 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "adidas apple amazon beats"
+      "dre orders cpu shoes";
+    margin-top: 10vh;
+  }
+  
+  .dre{
+    grid-area: dre;
+  }
+  
+  .orders{
+    grid-area: orders
+  }
+  
+  .cpu{
+    grid-area: cpu;
+  }
+  
+  .adidas{
+    grid-area: adidas;
+  }
+  
+  .apple{
+    grid-area: apple;
+  }
+  
+  .amazon{
+    grid-area:amazon;
+  }
+  
+  .beats{
+    grid-area:beats
+  }
+  
+  .adidas,.apple,.amazon,.beats,
+  .cpu,.shoes,.dre,.orders{
+    justify-self: center;
+    align-self: center;
+    padding: 3em;
+    max-height: 50vh;
+    border: 1px solid #eee;
+  }
+  
+  div img{
+      width:  100%;
+      height: 100%;
+  }
